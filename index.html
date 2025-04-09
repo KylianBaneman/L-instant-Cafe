@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/CSS/accueil.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ida8hsv.css">
+</head>
+<body>
+  <header class="header">
+    <div class="overlay--burger trigger"></div>
+    <div class="menuBurger">
+      <div class="menuBurger__img"><a href="index.html"><img src="./assets/Img/Logo_Variable.png" alt="logo"></a></div>
+      <ul>
+        <li><a href="propos.html">Qui sommes-nous ?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="benevole.html">Devenir bénévole</a></li>
+        <li><a href="don.html">Faire un don</a></li>
+      </ul>
+    </div>
+    <div class="header__img"><a href="index.html"><img src="./assets/IMG/logo partiel.png" alt="logo"></a></div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="lien" href="#propos">Qui-sommes-nous ?</a></li>
+        <li><a class="lien" href="#carte">Notre carte</a></li>
+        <li><a class="lien" href="#contact">Contact</a></li>
+      </ul>
+      <div class="reseaux">
+        <div class="header__imgCampagne2"><a href="./assets/IMG/zeoob.com_y7dwk0uc7f_photo.png" target="_blank"><img src="./assets/IMG/14414683-logo-instagram-noir-sur-fond-transparent-gratuit-vectoriel-removebg-preview.png" alt="Instagram"></a></div>
+        <div class="header__imgCampagne"><a href="./assets/IMG/affiche.pdf" target="_blank"><img src="./assets/IMG/18757811-vecteur-de-logo-tiktok-noir-symbole-tiktok-vecteur-gratuit-d-icone-tiktok-gratuit-vectoriel-removebg-preview.png" alt="TikTok campagne"></a></div>
+      </div>
+    </nav>
+    <button type="button" aria-label="toggle curtain navigation"  class="burger--toggler">
+      <span class="l1"></span>
+      <span class="l2"></span>
+      <span class="l3"></span>
+    </button>
+  </header>
+  <main>
+    <section class="accueil">
+      <article class="accueil__txt">
+        <h1>Bienvenue chez l'instant Café !</h1>
+        <p>L'instant café c'est une cafétéria étudiante avec une ambiance chill et agréable.</p>
+        <p>Si tu souhaites te reposer en grignotant quelque chose pendant ta pause ou juste travailler tranquillement,</p>
+        <p>On te donne rendez-vous au 4 Quai des Queyries tout les jours de 9h jusqu'à 17h</p>
+      </article>
+      <div class="accueil__imgContainer">
+        <div class="accueil__img">
+          <img src="./assets/IMG/design site 1.png" alt="image d'accueil">
+        </div>
+      </div>
+    </section>
+    <section class="quisn">
+      <article>
+        <h2 id="propos">Qui-sommes-nous</h2>
+      </article>
+      <article class="quisn__content">
+        <div class="quisn__img"><img src="./assets/IMG/6aa4835125a5a4c8162165d2278d822d.jpg"" alt=""></div>
+        <div class="quisn__txt">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam asperiores excepturi sapiente illum impedit quis consequatur illo, officia assumenda repudiandae soluta sunt labore accusamus aliquid vero totam repellat? Delectus voluptate doloremque in assumenda qui accusamus ad cupiditate magnam architecto ut, nesciunt, eveniet et eos illum nam sapiente consequatur pariatur!</p>
+        </div>
+      </article>
+    </section>
+    <section class="carte">
+      <article>
+        <h2 id="carte">Notre carte</h2>
+      </article>
+      <article class="carte__content">
+        <article class="carte__content__container">
+          <div class="carte__container__img"><img src="./assets/IMG/mockupPourSite.png" alt="café design"></div>
+          <div class="carte__container__txt">
+            <h3>Nos boissons</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+          </div>
+          <div class="carte__container__btn"><a class="carte__container__button__animate" href="#"><span>Découvrir</span></a></div>
+        </article>
+        <article class="carte__content__container">
+          <div class="carte__container__img"><img src="./assets/IMG/design site 1.png" alt="smoothie design"></div>
+          <div class="carte__container__txt">
+            <h3>Nos smoothies</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+          </div>
+          <div class="carte__container__btn"><a class="carte__container__button__animate" href="#"><span>Découvrir</span></a></div>
+        </article>
+        <article class="carte__content__container">
+          <div class="carte__container__img"><img src="./assets/IMG/design site 2.png" alt="donuts design"></div>
+          <div class="carte__container__txt">
+            <h3>Nos desserts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+          </div>
+          <div class="carte__container__btn"><a class="carte__container__button__animate" href="#"><span>Découvrir</span></a></div>
+        </article>
+      </article>
+    </section>
+    <section class="contact">
+      <article>
+        <h2 id="contact">Contact</h2>
+      </article>
+      <form action="#" method="post">
+        <div class="contact__container">
+          <div class="contact__container__input">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" >
+          </div>
+          <div class="contact__container__input">
+            <label for="name">Prénom</label>
+            <input type="text" id="name" name="name" >
+          </div>
+          <div class="contact__container__input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" >
+          </div>
+          <div class="contact__container__input">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" ></textarea>
+          </div>
+          <div class="formBtn"><button type="submit">Envoyer</button></div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <article class="footer__container__logo">
+        <div class="footer__logo"><a href="index.html"><img src="./assets/IMG/logo partiel texte blanc.png" alt="logo"></a></div>
+      </article>
+      <article class="footer__lien">
+        <a href="#">Conditions générales des ventes</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </article>
+      <article class="footer__annexe">
+        <div class="footer__adresse">
+          <p>Adresse : 4 Quai des Queyries</p>
+          <p>33100 Bordeaux</p>
+          <p>Téléphone : 06 06 06 06 06</p>
+        </div>
+        <div class="footer__horaires">
+          <p>Horaires d'ouverture :</p>
+          <p>Lundi - Vendredi : 9h - 17h</p>
+          <p>Samedi - Dimanche : Fermé</p>
+        </div>
+        <div>
+          <p>Nous suivre :</p>
+          <div class="footer__reseaux">
+            <div class="footer__reseaux1"><a href="https://www.instagram.com/" target="_blank"><img src="./assets/IMG/14414683-logo-instagram-noir-sur-fond-transparent-gratuit-vectoriel-removebg-preview.png" alt="Instagram"></a></div>
+            <div class="footer__reseaux2"><a href="https://www.tiktok.com/" target="_blank"><img src="./assets/IMG/18757811-vecteur-de-logo-tiktok-noir-symbole-tiktok-vecteur-gratuit-d-icone-tiktok-gratuit-vectoriel-removebg-preview.png" alt="TikTok"></a></div>
+          </div>
+
+        </div>
+      </article>
+    </section>
+  </footer>
+</body>
+<script src="./assets/JS/script.js"></script>
+</html>
