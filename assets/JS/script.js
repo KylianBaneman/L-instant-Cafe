@@ -12,6 +12,9 @@ let menuBurger = document.querySelector(".menuBurger")
 let Overlay = document.querySelector(".overlay--burger")
 let trigger = document.querySelector(".trigger")
 let linkBurger = document.querySelectorAll(".menuBurger a")
+let Overlay_modal = document.querySelector(".overlay--modal")
+let trigger_modal = document.querySelector(".trigger--modal")
+let Modal = document.querySelector(".modal")
 
 
 pages.forEach(page => page.addEventListener("mouseenter" , () =>{

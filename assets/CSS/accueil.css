@@ -404,7 +404,62 @@ footer{
 }
 
 
+.overlay--modal{
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(12, 12, 12 , 0.3);
+  transition: opacity 0.5s ease , visibility 0.5s ease ;
+}
+.overlay--modal.active{
+  opacity: 1;
+  visibility: visible;
+}
 
+.modal{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  width: 30%;
+  padding: 30px ;
+  background-color: #F2FAFC;
+  border: 1.5px solid rgb(0, 0, 0 , 0.7);
+  border-radius: 5px;
+  transition:opacity 0.3s ease , visibility 0.3s ease ;
+}
+
+.modal h1{
+  text-align: center;
+}
+
+.modal.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+.modalimg img{
+  width: auto;
+  height: 100%;
+}
 
 /* ------------------------ Menu Burger ------------------------ */
 
@@ -574,5 +629,8 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .modal{
+    width: 80%;
   }
 }
