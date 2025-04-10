@@ -277,6 +277,7 @@ h2{
 form{
   margin: 50px auto;
   width: 50%;
+  min-width: 350px;
 }
 
 .contact__container{
@@ -415,6 +416,9 @@ footer{
 .overlay--burger{
   cursor: pointer;
   position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   width: 100vw;
@@ -429,7 +433,9 @@ footer{
 
 .menuBurger{
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -444,11 +450,11 @@ footer{
 }
 
 .menuBurger__img{
-  margin-top: 50px;
+  margin: 25px auto;
   display : flex; 
   justify-content : center;
   align-items : center ;
-  width : 90px;
+  width : 200px;
   height : 100px;
 }
 
@@ -531,5 +537,42 @@ footer{
   }
   .burger--toggler.active .l3{
     transform: translateY(0px) rotate(-135deg);
+  }
+  .accueil{
+    flex-direction: column;
+  }
+  .accueil__txt{
+    width: 90%;
+  }
+  .accueil__img{
+    width: 300px;
+    height: 400px;
+  }
+  .quisn__content{
+    flex-direction: column;
+  }
+  .quisn__txt{
+    width: 90%;
+  }
+  .carte__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .carte__content__container{
+    width: 90%;
+    margin: 50px auto;
+  }
+  .carte__container__img{
+    width: 350px;
+    height: 450px;
+  }
+  .footer__lien{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer__annexe{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

@@ -7,6 +7,11 @@ let reseaux = document.querySelector(".reseaux")
 let inps = document.querySelectorAll(".contact input")
 let tarea = document.querySelector("textarea")
 let form = document.querySelector("form")
+let menuBurgerIcon = document.querySelector(".burger--toggler")
+let menuBurger = document.querySelector(".menuBurger")
+let Overlay = document.querySelector(".overlay--burger")
+let trigger = document.querySelector(".trigger")
+let linkBurger = document.querySelectorAll(".menuBurger a")
 
 
 pages.forEach(page => page.addEventListener("mouseenter" , () =>{
@@ -20,6 +25,11 @@ pages.forEach(page => page.addEventListener("mouseleave" , () =>{
 
 form.addEventListener("submit" , toggleContact)
 window.addEventListener("scroll" , scrollHeader)
+menuBurgerIcon.addEventListener("click" , toggleBurger)
+trigger.addEventListener("click" , toggleBurgerClose)
+linkBurger.forEach(link => {
+  link.addEventListener("click" , toggleBurgerClose)
+})
 
 function scrollHeader(){
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -53,4 +63,15 @@ function toggleContact(e){
     inps.forEach(inp1 => inp1.disabled = true)
     tarea.disabled = true
   }
+}
+
+function toggleBurger(){
+  menuBurgerIcon.classList.toggle("active")
+  menuBurger.classList.toggle("active")
+  Overlay.classList.toggle("active")
+}
+function toggleBurgerClose(){
+  menuBurgerIcon.classList.toggle("active")
+  menuBurger.classList.toggle("active")
+  Overlay.classList.toggle("active")
 }
