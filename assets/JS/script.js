@@ -26,6 +26,7 @@ pages.forEach(page => page.addEventListener("mouseleave" , () =>{
   titleLink.style.transform = "scale(1)"
 }))
 
+trigger_modal.addEventListener("click" , toggleContactClose)
 form.addEventListener("submit" , toggleContact)
 window.addEventListener("scroll" , scrollHeader)
 menuBurgerIcon.addEventListener("click" , toggleBurger)
@@ -51,6 +52,10 @@ function scrollHeader(){
   lastScrollTop = scrollTop
 }
 
+function toggleContactClose(){
+  Overlay_modal.classList.toggle("active")
+  Modal.classList.toggle("active")
+}
 
 function toggleContact(e){
   e.preventDefault()
@@ -67,6 +72,7 @@ function toggleContact(e){
     tarea.disabled = true
   }
 }
+
 
 function toggleBurger(){
   menuBurgerIcon.classList.toggle("active")
